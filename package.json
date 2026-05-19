@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^39.2.7"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
+  }
+}

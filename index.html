@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      padding: 40px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    input[type="file"] {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    #fileName {
+      margin-top: 10px;
+      color: #a5b4fc;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #6366f1;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4f46e5;
+    }
+
+    #output {
+      margin-top: 30px;
+      background: #020617;
+      padding: 15px;
+      border-radius: 6px;
+      max-height: 300px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎓 Student Portfolio Builder</h1>
+  <p>Upload your resume and generate a portfolio.</p>
+
+  <input type="file" id="resume" accept=".pdf" />
+  <div id="fileName">No file selected</div>
+
+  <button id="generateBtn">Read Resume</button>
+
+  <h3>📄 Extracted Resume Text (debug)</h3>
+  <pre id="output">Waiting for resume...</pre>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
